@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Custom Google Form</title>
+</head>
+<body>
+    <form id="myForm"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScPA3UQ3iVUNSvNlLvE3sqBT9MwYWlj2UrXkJxMEcTftjYmPw/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="submitted=true;"
+    >
+    <h2>ロゴ</h2>
+    <p>サービス向上のために、アンケートにご協力お願い致します。</p>
+        <label>セレクトボックス（年齢）</label>
+        <select name="entry.4444444" required>
+            <option value="">選択してください</option>
+            <option value="20以下">20歳以下</option>
+            <option value="21-40">21歳から40歳</option>
+            <option value="41以上">41歳以上</option>
+        </select><br>
+
+        <fieldset>
+            <legend>性別</legend>
+            <label>
+                <input type="radio" id="male" name="entry.1550543973" value="男性" required>
+                <span class="custom-radio "></span>男性
+            </label>
+            <label>
+                <input type="radio" id="female" name="entry.1550543973" value="女性" required>
+                <span class="custom-radio "></span>女性
+            </label>
+            <label>
+                <input type="radio" id="other" name="entry.1550543973" value="その他" required>
+                <span class="custom-radio "></span>その他
+            </label>
+        </fieldset>
+        
+
+        <fieldset>
+            <legend>チェックボックス（受けた治療）</legend>
+            <label>
+                <input type="checkbox" name="entry.1865171442" value="ハゲ治療">
+                <span class="custom-checkbox"></span> ハゲ治療
+            </label>
+            <label>
+                <input type="checkbox" name="entry.1865171442" value="脱毛">
+                <span class="custom-checkbox"></span> 脱毛
+            </label>
+            <label>
+                <input type="checkbox" name="entry.1865171442" value="お肌キレイ">
+                <span class="custom-checkbox"></span> お肌キレイ
+            </label>
+        </fieldset>
+
+        <label for="feedback">テキストエリア（フリーテキスト）</label>
+        <textarea name="entry.337020705" id="isCopyToClipBoard" rows="3"></textarea>
+
+        <input type="submit" value="送信" class="copyButton" data-clipboard-target="#isCopyToClipBoard">
+    </form>
+</body>
+<script>
+    var submitted = false;
+    new ClipboardJS('.copyButton');
+</script>
+<iframe
+  name="hidden_iframe"
+  id="hidden_iframe"
+  style="display: none"
+  onload="if(submitted)  {window.location='result.html';}"
+></iframe>
+</html>
