@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Custom Google Form</title>
@@ -17,7 +17,7 @@
     <h2>ロゴ</h2>
     <p>サービス向上のために、アンケートにご協力お願い致します。</p>
     <label for="feedback">当院を受診したきっかけ</label>
-    <textarea name="entry.730544180" rows="3"></textarea>
+    <textarea id="feedback" name="entry.730544180" rows="3" required></textarea>
 
 
     <fieldset>
@@ -120,8 +120,8 @@
     </fieldset>
     
     
-    <label for="feedback">一言</label>
-    <textarea name="entry.153954331" id="isCopyToClipBoard" rows="3"></textarea>
+    <label for="comment">一言</label>
+    <textarea id="comment" name="entry.153954331" id="isCopyToClipBoard" rows="3" required></textarea>
     <!--
         <label>セレクトボックス（年齢）</label>
         <select name="entry.4444444" required>
