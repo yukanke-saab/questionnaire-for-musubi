@@ -9,13 +9,120 @@
 </head>
 <body>
     <form id="myForm"
-        action="https://docs.google.com/forms/d/e/1FAIpQLScPA3UQ3iVUNSvNlLvE3sqBT9MwYWlj2UrXkJxMEcTftjYmPw/formResponse"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeATUjm8devbs-IXTt_kvv08VyDOsfjmvv-9TgJ1jB3tbC5Gw/formResponse"
         method="POST"
         target="hidden_iframe"
         onsubmit="submitted=true;"
     >
     <h2>ロゴ</h2>
     <p>サービス向上のために、アンケートにご協力お願い致します。</p>
+    <label for="feedback">当院を受診したきっかけ</label>
+    <textarea name="entry.730544180" rows="3"></textarea>
+
+
+    <fieldset>
+        <legend>診察までの待ち時間</legend>
+        <label>
+            <input type="radio" name="entry.383935252" value="20分" required>
+            <span class="custom-radio "></span>20分
+        </label>
+        <label>
+            <input type="radio" name="entry.383935252" value="40分" required>
+            <span class="custom-radio "></span>40分
+        </label>
+        <label>
+            <input type="radio" name="entry.383935252" value="60分以上" required>
+            <span class="custom-radio "></span>60分以上
+        </label>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>会計までの待ち時間</legend>
+        <label>
+            <input type="radio" name="entry.192513500" value="20分" required>
+            <span class="custom-radio "></span>20分
+        </label>
+        <label>
+            <input type="radio" name="entry.192513500" value="40分" required>
+            <span class="custom-radio "></span>40分
+        </label>
+        <label>
+            <input type="radio" name="entry.192513500" value="60分以上" required>
+            <span class="custom-radio "></span>60分以上
+        </label>
+    </fieldset>
+    
+
+    <fieldset>
+        <legend>診療は適切だったか（説明等わかりやすかったか）</legend>
+        <label>
+            <input type="radio" name="entry.1453372591" value="とてもよかった" required>
+            <span class="custom-radio "></span>とてもよかった
+        </label>
+        <label>
+            <input type="radio" name="entry.1453372591" value="よかった" required>
+            <span class="custom-radio "></span>よかった
+        </label>
+        <label>
+            <input type="radio" name="entry.1453372591" value="ふつう" required>
+            <span class="custom-radio "></span>ふつう
+        </label>
+        <label>
+            <input type="radio" name="entry.1453372591" value="わるい" required>
+            <span class="custom-radio "></span>わるい
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>スタッフの対応はどうだったか</legend>
+        <label>
+            <input type="radio" name="entry.930991222" value="とてもよかった" required>
+            <span class="custom-radio "></span>とてもよかった
+        </label>
+        <label>
+            <input type="radio" name="entry.930991222" value="よかった" required>
+            <span class="custom-radio "></span>よかった
+        </label>
+        <label>
+            <input type="radio" name="entry.930991222" value="ふつう" required>
+            <span class="custom-radio "></span>ふつう
+        </label>
+        <label>
+            <input type="radio" name="entry.930991222" value="わるい" required>
+            <span class="custom-radio "></span>わるい
+        </label>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>予約サービスに満足しているか</legend>
+        <label>
+            <input type="radio" name="entry.1669090080" value="使いやすい" required>
+            <span class="custom-radio "></span>使いやすい
+        </label>
+        <label>
+            <input type="radio" name="entry.1669090080" value="使いにくい" required>
+            <span class="custom-radio "></span>使いにくい
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>当クリニックを勧めたいと思うか</legend>
+        <label>
+            <input type="radio" name="entry.1332309264" value="勧めたいと思う" required>
+            <span class="custom-radio "></span>勧めたいと思う
+        </label>
+        <label>
+            <input type="radio" name="entry.1332309264" value="勧めたいと思わない" required>
+            <span class="custom-radio "></span>勧めたいと思わない
+        </label>
+    </fieldset>
+    
+    
+    <label for="feedback">一言</label>
+    <textarea name="entry.153954331" id="isCopyToClipBoard" rows="3"></textarea>
+    <!--
         <label>セレクトボックス（年齢）</label>
         <select name="entry.4444444" required>
             <option value="">選択してください</option>
@@ -59,6 +166,9 @@
 
         <label for="feedback">テキストエリア（フリーテキスト）</label>
         <textarea name="entry.337020705" id="isCopyToClipBoard" rows="3"></textarea>
+
+-->
+
 
         <input type="submit" value="送信" class="copyButton" data-clipboard-target="#isCopyToClipBoard">
     </form>
